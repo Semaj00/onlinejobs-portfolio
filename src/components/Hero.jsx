@@ -1,14 +1,14 @@
 import React from 'react'
 import Typing from './Typing'
 import { motion } from 'framer-motion'
-import profileImage from '../assets/profile-placeholder.svg'
+import profileImage from '../assets/profile.svg.png'
 
 export default function Hero(){
   return (
     <section id="home" className="py-20">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         <motion.div initial={{ x: -40, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.6 }}>
-          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">Hi, I'm Your Name</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">Hi, I'm Marvin James Libag</h1>
           <h2 className="mt-3 text-2xl text-indigo-300 font-semibold"><Typing /></h2>
           <p className="mt-6 max-w-xl text-slate-300">I help businesses and entrepreneurs with virtual assistance, web development, AI integration and reliable remote support. Fast, detail-oriented, and based in the Philippines.</p>
 

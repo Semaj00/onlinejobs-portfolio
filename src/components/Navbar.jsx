@@ -8,9 +8,9 @@ export default function Navbar({ onToggleTheme, theme }){
     <header className="sticky top-0 z-30 bg-transparent backdrop-blur-sm">
       <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-4">
-          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-500 to-pink-500 flex items-center justify-center font-bold">YN</div>
+          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-500 to-pink-500 flex items-center justify-center font-bold">MJL</div>
           <div>
-            <a href="#" className="text-lg font-semibold">Your Name</a>
+            <a href="#" className="text-lg font-semibold">Marvin James Libag</a>
             <div className="text-xs text-slate-400">Freelance • Philippines</div>
           </div>
         </div>
@@ -19,7 +19,6 @@ export default function Navbar({ onToggleTheme, theme }){
           <a href="#about" className="hover:text-white transition">About</a>
           <a href="#skills" className="hover:text-white transition">Skills</a>
           <a href="#services" className="hover:text-white transition">Services</a>
-          <a href="#portfolio" className="hover:text-white transition">Portfolio</a>
           <a href="#contact" className="hover:text-white transition">Contact</a>
         </div>
 
@@ -38,7 +37,6 @@ export default function Navbar({ onToggleTheme, theme }){
           <a onClick={()=> setOpen(false)} href="#about">About</a>
           <a onClick={()=> setOpen(false)} href="#skills">Skills</a>
           <a onClick={()=> setOpen(false)} href="#services">Services</a>
-          <a onClick={()=> setOpen(false)} href="#portfolio">Portfolio</a>
           <a onClick={()=> setOpen(false)} href="#contact">Contact</a>
         </div>
       )}

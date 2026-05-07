@@ -8,7 +8,6 @@ export default function Footer(){
         <div className="text-sm text-slate-400">© {new Date().getFullYear()} Your Name. All rights reserved.</div>
         <div className="flex flex-wrap items-center gap-4">
           <a href="#about" className="hover:text-white transition">About</a>
-          <a href="#portfolio" className="hover:text-white transition">Portfolio</a>
           <a href="#contact" className="hover:text-white transition">Contact</a>
           <div className="flex gap-2 ml-2">
             <a href="#" aria-label="GitHub" className="p-2 rounded-full glass"><Github size={16} /></a>

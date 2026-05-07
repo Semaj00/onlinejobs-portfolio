@@ -9,6 +9,7 @@ const SKILLS = [
   {name:'Canva', icon: Cpu},
   {name:'ChatGPT & AI Tools', icon: Cpu},
   {name:'Web Development', icon: Code},
+  {name:'Bookkeeping', icon: Database},
   {name:'Digital Marketing', icon: Code},
   {name:'Customer Support', icon: FileText},
   {name:'Social Media Management', icon: FileText}

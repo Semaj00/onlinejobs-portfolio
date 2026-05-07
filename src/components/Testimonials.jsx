@@ -2,9 +2,9 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 const TESTS = [
-  {name:'Client A', role:'Founder, Travel Co.', quote:'Amazing attention to detail and quick turnaround.'},
-  {name:'Client B', role:'Project Manager', quote:'Reliable, communicative, and great value.'},
-  {name:'Client C', role:'Small Business Owner', quote:'Helped scale our operations remotely.'}
+  {name:'Client A', role:'', quote:''},
+  {name:'Client B', role:'', quote:''},
+  {name:'Client C', role:'', quote:''}
 ]
 
 export default function Testimonials(){

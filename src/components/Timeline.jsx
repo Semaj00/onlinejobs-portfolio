@@ -2,10 +2,12 @@ import React from 'react'
 
 export default function Timeline(){
   const items = [
-    {title:'Freelance Projects', date:'2021 - Present', desc:'Various client projects for web apps and virtual assistance.'},
-    {title:'Academic Projects', date:'2019 - 2021', desc:'University projects involving ML and system design.'},
-    {title:'Training & Certifications', date:'2020 - 2023', desc:'Online courses: AI, data analysis, web development.'}
+
+    {title:'Training & Certifications', date:'July 9, 2025', desc:'OJT Training: Code, Create, Protect: Navigating Intellectual Property Rights in Computer Science .'},
+    {title:'Training & Certifications', date:' February 24, 2025', desc:'OJT Training: AI Frontier: Generative AI Insight and Practice of AI Creation .'}, 
+    {title:'Training & Certifications', date:' November 25, 2023', desc:'Webinar: Cyber Wellness  .'}
   ]
+  
 
   return (
     <section id="experience" className="py-16">

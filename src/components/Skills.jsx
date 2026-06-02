@@ -1,9 +1,10 @@
 import React from 'react'
-import { Code, Database, FileText, Cpu } from 'lucide-react'
+import { Code, Database, FileText, Cpu, Video } from 'lucide-react'
 import { motion } from 'framer-motion'
 
 const SKILLS = [
   {name:'Data Entry', icon: FileText},
+  {name:'Short-Form AI Video Creator', icon: Video},
   {name:'Microsoft Excel', icon: Database},
   {name:'Google Workspace', icon: Code},
   {name:'Canva', icon: Cpu},

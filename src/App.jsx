@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Skills from './components/Skills'
 import Services from './components/Services'
+import Portfolio from './components/Portfolio'
 import Timeline from './components/Timeline'
 import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
@@ -36,6 +37,7 @@ export default function App(){
         <About />
         <Skills />
         <Services />
+        <Portfolio />
         <Timeline />
         <Testimonials />
         <Contact />

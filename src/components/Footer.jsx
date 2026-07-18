@@ -1,5 +1,12 @@
 import React from 'react'
-import { Github, Linkedin, Facebook } from 'lucide-react'
+import { Briefcase, FileText, Github, Linkedin } from 'lucide-react'
+
+const footerLinks = [
+  { label: 'GitHub', href: 'https://github.com/Semaj00', icon: Github },
+  { label: 'OnlineJobs.ph', href: 'https://v2.onlinejobs.ph/jobseekers/info/2727220', icon: Briefcase },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/marvin-james-libag-063b44278/?locale=en', icon: Linkedin },
+  { label: 'Resume', href: new URL('../../LIBAG_RESUME.pdf', import.meta.url).href, icon: FileText, download: true },
+]
 
 export default function Footer(){
   return (
@@ -9,10 +16,21 @@ export default function Footer(){
         <div className="flex flex-wrap items-center gap-4">
           <a href="#about" className="hover:text-white transition">About</a>
           <a href="#contact" className="hover:text-white transition">Contact</a>
-          <div className="flex gap-2 ml-2">
-            <a href="#" aria-label="GitHub" className="p-2 rounded-full glass"><Github size={16} /></a>
-            <a href="#" aria-label="LinkedIn" className="p-2 rounded-full glass"><Linkedin size={16} /></a>
-            <a href="#" aria-label="Facebook" className="p-2 rounded-full glass"><Facebook size={16} /></a>
+          <div className="flex flex-wrap gap-2 ml-2">
+            {footerLinks.map(({ label, href, icon: Icon, download }) => (
+              <a
+                key={label}
+                href={href}
+                download={download ? '' : undefined}
+                target={download ? undefined : '_blank'}
+                rel={download ? undefined : 'noreferrer'}
+                aria-label={label}
+                className="flex items-center gap-2 px-3 py-2 rounded-full glass"
+              >
+                <Icon size={16} />
+                <span className="text-sm">{label}</span>
+              </a>
+            ))}
           </div>
         </div>
       </div>

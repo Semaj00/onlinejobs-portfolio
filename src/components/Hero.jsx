@@ -3,6 +3,8 @@ import Typing from './Typing'
 import { motion } from 'framer-motion'
 import profileImage from '../assets/profile.svg.png'
 
+const resumeUrl = new URL('../../LIBAG_RESUME.pdf', import.meta.url).href
+
 export default function Hero(){
   return (
     <section id="home" className="py-20">
@@ -14,7 +16,7 @@ export default function Hero(){
 
           <div className="mt-6 flex gap-4">
             <a href="#contact" className="px-5 py-3 bg-indigo-600 hover:bg-indigo-500 rounded-md shadow-md">Hire Me</a>
-            <a href="/resume.pdf" className="px-5 py-3 border border-slate-700 rounded-md">Download Resume</a>
+            <a href={resumeUrl} className="px-5 py-3 border border-slate-700 rounded-md" target="_blank" rel="noreferrer">Download Resume</a>
           </div>
         </motion.div>
 

@@ -29,7 +29,9 @@ export default function App(){
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-[#020617] to-slate-900 text-slate-100">
+    <div className={theme === 'light'
+      ? 'theme-light min-h-screen bg-gradient-to-b from-slate-100 via-white to-slate-200 text-slate-900'
+      : 'theme-dark min-h-screen bg-gradient-to-b from-slate-900 via-[#020617] to-slate-900 text-slate-100'}>
       <ScrollProgress />
       <Navbar onToggleTheme={toggleTheme} theme={theme} />
       <main className="container mx-auto px-6 lg:px-8">

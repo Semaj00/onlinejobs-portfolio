@@ -16,15 +16,12 @@ export default function App(){
   const [theme, setTheme] = useState('dark')
 
   useEffect(()=>{
-    const stored = localStorage.getItem('site-theme')
-    if(stored) setTheme(stored)
-    document.documentElement.classList.toggle('dark', stored !== 'light')
+    document.documentElement.classList.add('dark')
   },[])
 
   const toggleTheme = ()=>{
     const next = document.documentElement.classList.contains('dark') ? 'light' : 'dark'
     document.documentElement.classList.toggle('dark', next !== 'light')
-    localStorage.setItem('site-theme', next)
     setTheme(next)
   }
 

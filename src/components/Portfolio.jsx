@@ -12,7 +12,7 @@ const PROJECTS = [
   {
     title:'Sample Videos',
     desc:'Short-form and long-form video editing samples with engaging pacing, clean transitions, and polished storytelling.',
-    tag:'Video Editor',
+    tag:'AI Video Editor',
     visualTitle:'Short & long-form edits',
     visualDesc:'From fast social cuts to structured long-form stories, edited for clarity, pacing, and engagement.',
     folders: SAMPLE_FOLDERS

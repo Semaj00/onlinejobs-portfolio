@@ -34,10 +34,10 @@ export default function App(){
       <Navbar onToggleTheme={toggleTheme} theme={theme} />
       <main className="container mx-auto px-6 lg:px-8">
         <Hero />
+        <Portfolio />
         <About />
         <Skills />
         <Services />
-        <Portfolio />
         <Timeline />
         <Testimonials />
         <Contact />

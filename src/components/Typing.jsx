@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 
 const TITLES = [
-  'Virtual Assistant',
-  'Web Developer'
+  'Short & Long-Form Editor',
+  'Web Developer',
+  'Social Media Manager',
+  'Short & Long-Form Content Creator'
 ]
 
 export default function Typing(){

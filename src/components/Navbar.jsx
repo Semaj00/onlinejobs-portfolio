@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Moon, Sun, Menu, X } from 'lucide-react'
+import { Moon, Sun, Menu, X, Video } from 'lucide-react'
 
 export default function Navbar({ onToggleTheme, theme }){
   const [open, setOpen] = useState(false)
@@ -8,7 +8,12 @@ export default function Navbar({ onToggleTheme, theme }){
     <header className="sticky top-0 z-30 bg-transparent backdrop-blur-sm">
       <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-4">
-          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-500 to-pink-500 flex items-center justify-center font-bold">MJL</div>
+          <div aria-label="MJL video editor logo" className="relative w-11 h-11 rounded-xl bg-gradient-to-br from-indigo-500 via-fuchsia-500 to-rose-500 flex items-center justify-center shadow-lg shadow-fuchsia-500/20 rotate-3">
+            <div className="w-9 h-9 rounded-lg bg-slate-950/80 flex items-center justify-center -rotate-3">
+              <Video size={19} strokeWidth={2.4} className="text-white" />
+            </div>
+            <span className="absolute -right-1 -top-1 w-2.5 h-2.5 rounded-full bg-rose-300 ring-2 ring-slate-950" />
+          </div>
           <div>
             <a href="#" className="text-lg font-semibold">Marvin James Libag</a>
             <div className="text-xs text-slate-400">Freelance • Philippines</div>

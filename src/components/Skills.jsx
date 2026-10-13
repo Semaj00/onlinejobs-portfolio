@@ -13,7 +13,8 @@ const SKILLS = [
   {name:'Bookkeeping', icon: Database},
   {name:'Digital Marketing', icon: Code},
   {name:'Customer Support', icon: FileText},
-  {name:'Social Media Management', icon: FileText}
+  {name:'Social Media Management', icon: FileText},
+  {name:'Social Media Manager', icon: FileText}
 ]
 
 export default function Skills(){
